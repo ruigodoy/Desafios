@@ -5,6 +5,7 @@
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Delete</title>
+		<style type="text/css">@import url("../css/style.css"); </style>
 	</head>
 	<body>
 		<form action="../executes/delete_execute.jsp" method="post">
@@ -14,7 +15,7 @@
 			<label>Nome: </label><br />
 			<input type="text" name="nome" value="<%=request.getParameter("nome")%>" /><br />
 			
-			<button type="submit"> Excluir Aluno </button>
+			<button type="submit" class="button"> Excluir Aluno </button>
 		</form>
 	</body>
 </html>

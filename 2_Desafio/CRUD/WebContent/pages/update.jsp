@@ -5,6 +5,7 @@
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Update</title>
+		<style type="text/css">@import url("../css/style.css"); </style>
 	</head>
 	<body>
 		<form action="../executes/update_execute.jsp" method="post">
@@ -17,7 +18,7 @@
 			<label>Idade: </label><br />
 			<input type="text" name="idade" value="<%=request.getParameter("idade")%>"  /><br />
 			
-			<button type="submit"> Alterar Aluno </button>
+			<button type="submit" class="button"> Alterar Aluno </button>
 		</form>
 	</body>
 </html>
