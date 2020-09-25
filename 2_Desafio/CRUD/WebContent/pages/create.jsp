@@ -7,7 +7,7 @@
 		<title>Create</title>
 	</head>
 	<body>
-		<form action="executes/create_execute.jsp" method="post">
+		<form action="../executes/create_execute.jsp" method="post">
 			<!--<label>ID: </label><br />
 			<input type="text" name="id_aluno" /><br /> -->
 			

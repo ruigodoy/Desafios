@@ -35,13 +35,13 @@
 						out.print("<td>" + alunos.get(i).getNome() + "</td>");
 						out.print("<td>" + alunos.get(i).getIdade() + "</td>");
 						
-						out.print("<td><a href='update.jsp?id_aluno=" 
+						out.print("<td><a href='pages/update.jsp?id_aluno=" 
 									+ alunos.get(i).getId_aluno() 
 									+ "&nome=" + alunos.get(i).getNome()
 									+ "&idade=" + alunos.get(i).getIdade()
 									+ "'>Editar</a></td>");
 						
-						out.print("<td><a href='delete.jsp?id_aluno=" 
+						out.print("<td><a href='pages/delete.jsp?id_aluno=" 
 								+ alunos.get(i).getId_aluno() 
 								+ "&nome=" + alunos.get(i).getNome()
 								+ "'>Excluir</a></td>");
@@ -56,13 +56,13 @@
 						out.print("<td>" + alunos.get(i).getNome() + "</td>");
 						out.print("<td>" + alunos.get(i).getIdade() + "</td>");
 						
-						out.print("<td><a href='update.jsp?id_aluno=" 
+						out.print("<td><a href='pages/update.jsp?id_aluno=" 
 									+ alunos.get(i).getId_aluno() 
 									+ "&nome=" + alunos.get(i).getNome()
 									+ "&idade=" + alunos.get(i).getIdade()
 									+ "'>Editar</a></td>");
 						
-						out.print("<td><a href='delete.jsp?id_aluno=" 
+						out.print("<td><a href='pages/delete.jsp?id_aluno=" 
 								+ alunos.get(i).getId_aluno() 
 								+ "&nome=" + alunos.get(i).getNome()
 								+ "'>Excluir</a></td>");
