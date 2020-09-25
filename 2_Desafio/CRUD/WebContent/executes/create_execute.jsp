@@ -24,15 +24,12 @@
 			}else{
 				aluno.setNome(request.getParameter("nome"));
 				aluno.setIdade(Integer.parseInt(request.getParameter("idade")));
-					
 				alunoD.inserir(aluno);
 				String resposta = "";
 				resposta = "../pages/create.jsp";
 				request.setAttribute("sucessCreate", "Aluno adicionado com sucesso!");
 				RequestDispatcher rd = request.getRequestDispatcher(resposta);
 				rd.forward(request, response);
-				
-				response.sendRedirect("../index.jsp");
 			}
 		}catch(Exception erro){
 				throw new RuntimeException("create.jsp error: " + erro);

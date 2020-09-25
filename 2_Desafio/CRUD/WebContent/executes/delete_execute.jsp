@@ -12,7 +12,11 @@
 		try{
 			AlunoDAO alunoD = new AlunoDAO();
 			alunoD.deletar(Integer.parseInt(request.getParameter("id_aluno")));
-			response.sendRedirect("../index.jsp");
+			String resposta = "";
+			resposta = "../pages/delete.jsp";
+			request.setAttribute("sucessDelete", "Aluno deletado com Sucesso!");
+			RequestDispatcher rd = request.getRequestDispatcher(resposta);
+			rd.forward(request, response);
 		}catch(Exception erro){
 			throw new RuntimeException("delete.jsp error: " + erro);
 		}

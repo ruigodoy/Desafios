@@ -25,11 +25,11 @@
 			String sucess = (String) request.getAttribute("sucessCreate");
 			
 			if(erro != null){
-				out.print(erro);
+				out.print(erro + " <i class='fas fa-times-circle'></i>");
 			}
-			
+
 			if(sucess != null){
-				out.print(sucess);
+				out.print(sucess + " <i class='fas fa-check'></i>");
 			}
 		%>
 	</body>

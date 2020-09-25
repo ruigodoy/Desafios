@@ -79,23 +79,4 @@ public class AlunoDAO {
 		return alunos;
 	}
 	
-	public ArrayList<Aluno> getAllAlunosByName(String nome){
-		String query = "SELECT * FROM alunos WHERE nome LIKE '%" + nome + "%'";
-		try {
-			st = conexao.createStatement();
-			result = st.executeQuery(query);
-			while(result.next()) {
-				Aluno aluno = new Aluno();
-				aluno.setId_aluno(result.getInt("id_aluno"));
-				aluno.setNome(result.getString("nome"));
-				aluno.setIdade(result.getInt("idade"));
-				
-				alunos.add(aluno);
-			}
-		}catch(Exception erro) {
-			throw new RuntimeException("getAllAlunos() error: "  + erro);
-		}
-		
-		return alunos;
-	}
 }

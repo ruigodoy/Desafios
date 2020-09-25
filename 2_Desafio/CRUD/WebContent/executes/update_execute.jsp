@@ -23,7 +23,11 @@
 				aluno.setId_aluno(Integer.parseInt(request.getParameter("id_aluno")));
 					
 				alunoD.alterar(aluno);
-				response.sendRedirect("../index.jsp");
+				String resposta = "";
+				resposta = "../pages/update.jsp";
+				request.setAttribute("sucessUpdate", "Aluno atualizado com Sucesso!");
+				RequestDispatcher rd = request.getRequestDispatcher(resposta);
+				rd.forward(request, response);
 			}
 		}catch(Exception erro){
 			throw new RuntimeException("update.jsp error: " + erro);

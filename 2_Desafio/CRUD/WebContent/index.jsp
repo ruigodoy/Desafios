@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<a href="pages/create.jsp" class="button">Adicionar novo Contato</a>	
+			<a href="pages/create.jsp" class="button">Adicionar novo Aluno</a>	
 			<%
 				try{
 					out.print("<table>");
